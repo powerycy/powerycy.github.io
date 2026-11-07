@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chaoyi Yuan's personal homepage. Open-source projects in natural language processing, information extraction, and knowledge graphs. Contact: chaoyiyuan3721@gmail.com.">
+  <meta name="author" content="Chaoyi Yuan">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Chaoyi Yuan">
+  <meta property="og:description" content="Personal homepage · Natural language processing, information extraction, and knowledge graphs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://powerycy.github.io/">
+  <link rel="canonical" href="https://powerycy.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231771b7'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='32' fill='white'%3ECY%3C/text%3E%3C/svg%3E">
+  <title>Chaoyi Yuan</title>
+  <style>
+    :root { color-scheme: light; --ink: #20252b; --muted: #66717c; --blue: #1771b7; --line: #e7ebef; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; background: #fff; color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--blue); text-decoration: none; text-underline-offset: 3px; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 2px; }
+    .skip { position: absolute; left: 12px; top: -70px; background: white; padding: 8px 12px; }
+    .skip:focus { top: 12px; }
+    main { max-width: 840px; margin: 0 auto; padding: 58px 28px 0; }
+    .intro { display: grid; grid-template-columns: 1fr 205px; align-items: center; gap: 56px; padding-bottom: 38px; }
+    h1 { font-size: 34px; font-weight: 500; line-height: 1.2; letter-spacing: -.7px; text-align: center; margin: 0 0 23px; }
+    p { margin: 0 0 14px; }
+    .email { margin-top: 19px; margin-bottom: 13px; }
+    .email a { color: var(--ink); overflow-wrap: anywhere; }
+    .quick-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0; padding: 0; margin: 0; list-style: none; }
+    .quick-links li + li::before { content: "/"; color: #a1a9b1; margin: 0 12px; }
+    .portrait { display: block; width: 205px; height: 205px; border-radius: 50%; object-fit: cover; background: #f3f5f7; }
+    .portrait-link { border-radius: 50%; }
+    h2 { margin: 0 0 15px; font-size: 23px; line-height: 1.4; font-weight: 500; letter-spacing: -.35px; }
+    section { margin-top: 34px; }
+    .focus { margin: 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+    .section-head h2 { margin-bottom: 9px; }
+    .section-head > a { white-space: nowrap; font-size: 13px; }
+    .project { display: grid; grid-template-columns: 154px 1fr; gap: 27px; padding: 25px 0; border-bottom: 1px solid var(--line); align-items: center; }
+    .project:last-child { border-bottom: 0; }
+    .project h3 { margin: 0 0 2px; font-size: 16px; line-height: 1.45; font-weight: 600; overflow-wrap: anywhere; }
+    .project p { margin: 7px 0 5px; line-height: 1.6; }
+    .project .topic { color: var(--muted); font-size: 12px; }
+    .project .code { font-size: 13px; }
+    .diagram { width: 154px; height: 112px; border-radius: 5px; display: block; background: #f7f9fc; }
+    .diagram text { font-family: Arial, Helvetica, sans-serif; }
+    .contact { padding-top: 22px; border-top: 1px solid var(--line); margin-top: 24px; }
+    .contact p { margin-bottom: 5px; }
+    footer { margin-top: 40px; padding: 20px 0 26px; color: var(--muted); font-size: 12px; text-align: center; border-top: 1px solid var(--line); }
+    @media (max-width: 640px) {
+      main { padding: 34px 22px 0; }
+      .intro { grid-template-columns: 1fr; gap: 24px; padding-bottom: 0; }
+      .portrait-link { grid-row: 1; justify-self: center; }
+      .portrait { width: 145px; height: 145px; }
+      h1 { margin-bottom: 20px; font-size: 31px; }
+      .email { text-align: center; }
+      section { margin-top: 34px; }
+      .project { grid-template-columns: 110px 1fr; gap: 17px; align-items: start; padding: 23px 0; }
+      .diagram { width: 110px; height: 90px; }
+      .section-head { gap: 10px; }
+      .section-head > a { font-size: 12px; }
+      h2 { font-size: 21px; }
+    }
+    @media (max-width: 380px) {
+      .project { grid-template-columns: 1fr; gap: 13px; }
+      .diagram { width: 132px; height: 96px; }
+      .section-head { flex-wrap: wrap; padding-bottom: 12px; gap: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a href="#projects" class="skip">Skip to projects</a>
+  <main>
+    <header class="intro" id="about">
+      <div>
+        <h1>Chaoyi Yuan</h1>
+        <p>Welcome! You can find my open-source work on <a href="https://github.com/powerycy">GitHub as powerycy</a>.</p>
+        <p>My public projects cover natural language processing, information extraction, and knowledge graph construction, including PyTorch implementations and adaptations for Chinese datasets.</p>
+        <p class="email"><strong>Email:</strong> <a href="mailto:chaoyiyuan3721@gmail.com">chaoyiyuan3721@gmail.com</a></p>
+        <nav aria-label="Personal links">
+          <ul class="quick-links">
+            <li><a href="mailto:chaoyiyuan3721@gmail.com">Email</a></li>
+            <li><a href="https://github.com/powerycy">GitHub</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a class="portrait-link" href="https://github.com/powerycy" aria-label="View Chaoyi Yuan's GitHub profile">
+        <img class="portrait" src="https://avatars.githubusercontent.com/u/36032407?v=4&amp;s=410" width="205" height="205" alt="Chaoyi Yuan's GitHub avatar">
+      </a>
+    </header>
+
+    <section aria-labelledby="focus-title">
+      <h2 id="focus-title">Open-source Focus</h2>
+      <p class="focus">Named entity recognition, relation extraction, and knowledge graphs. The projects below collect model implementations, training and inference code, and Chinese NLP adaptations.</p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">Selected Projects</h2>
+        <a href="https://github.com/powerycy?tab=repositories">All repositories &rarr;</a>
+      </div>
+
+      <article class="project">
+        <svg class="diagram" viewBox="0 0 154 112" role="img" aria-label="A knowledge graph connecting entities through relations">
+          <g fill="none" stroke="#a7bfd6" stroke-width="1.4"><path d="M39 32L80 53L119 27M80 53L124 80M80 53L37 84M80 53L83 93"/></g>
+          <g fill="#e8eff8" stroke="#7d9cba"><circle cx="39" cy="32" r="13"/><circle cx="119" cy="27" r="12"/><circle cx="124" cy="80" r="12"/><circle cx="37" cy="84" r="12"/><circle cx="83" cy="93" r="9"/></g>
+          <circle cx="80" cy="53" r="16" fill="#277db5"/>
+          <g text-anchor="middle" fill="#4c6d8c" font-size="8"><text x="39" y="35">entity</text><text x="119" y="30">entity</text><text x="124" y="83">entity</text><text x="37" y="87">entity</text></g>
+          <text x="80" y="56" text-anchor="middle" font-size="9" fill="white">KG</text>
+        </svg>
+        <div>
+          <h3><a href="https://github.com/powerycy/DeepKg">DeepKg</a></h3>
+          <div class="topic">Knowledge graph construction · Information extraction</div>
+          <p>A collection of components for building knowledge graphs, including named entity recognition, semantic normalization, vector retrieval, and phrase mining.</p>
+          <a class="code" href="https://github.com/powerycy/DeepKg">Code &amp; documentation &rarr;</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <svg class="diagram" viewBox="0 0 154 112" role="img" aria-label="Token span matrix for named entity recognition">
+          <g fill="#e8eef5"><rect x="39" y="18" width="14" height="14" rx="2"/><rect x="56" y="18" width="14" height="14" rx="2"/><rect x="73" y="18" width="14" height="14" rx="2"/><rect x="90" y="18" width="14" height="14" rx="2"/><rect x="107" y="18" width="14" height="14" rx="2"/><rect x="56" y="35" width="14" height="14" rx="2"/><rect x="73" y="35" width="14" height="14" rx="2"/><rect x="90" y="35" width="14" height="14" rx="2"/><rect x="107" y="35" width="14" height="14" rx="2"/><rect x="73" y="52" width="14" height="14" rx="2"/><rect x="90" y="52" width="14" height="14" rx="2"/><rect x="107" y="52" width="14" height="14" rx="2"/><rect x="90" y="69" width="14" height="14" rx="2"/><rect x="107" y="69" width="14" height="14" rx="2"/><rect x="107" y="86" width="14" height="14" rx="2"/></g>
+          <g fill="#4d94c4"><rect x="73" y="18" width="14" height="14" rx="2"/><rect x="90" y="52" width="14" height="14" rx="2"/><rect x="107" y="69" width="14" height="14" rx="2"/></g>
+          <text x="17" y="67" font-size="8" fill="#6b7c90" transform="rotate(-90 17 67)">START</text><text x="72" y="11" font-size="8" fill="#6b7c90">END</text>
+        </svg>
+        <div>
+          <h3><a href="https://github.com/powerycy/Efficient-GlobalPointer">Efficient GlobalPointer</a></h3>
+          <div class="topic">Named entity recognition · PyTorch</div>
+          <p>A PyTorch implementation of Efficient GlobalPointer, with configurable training and inference and support for distributed training.</p>
+          <a class="code" href="https://github.com/powerycy/Efficient-GlobalPointer">Code &amp; documentation &rarr;</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <svg class="diagram" viewBox="0 0 154 112" role="img" aria-label="A subject and an object linked by an extracted relation">
+          <path d="M36 58C36 17 119 17 119 58" fill="none" stroke="#6e98b8" stroke-width="1.5"/>
+          <path d="M115 50L119 58L123 50" fill="none" stroke="#6e98b8" stroke-width="1.5"/>
+          <rect x="13" y="57" width="49" height="25" rx="4" fill="#dfebf6"/><rect x="92" y="57" width="49" height="25" rx="4" fill="#e7e5f5"/>
+          <g font-size="9" text-anchor="middle"><text x="37.5" y="73" fill="#426989">subject</text><text x="116.5" y="73" fill="#6d6394">object</text><text x="77" y="26" fill="#607c95">relation</text></g>
+          <path d="M28 94H126" stroke="#d3dfe8" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3><a href="https://github.com/powerycy/Efficient-GlobalPointer-rel">Efficient GlobalPointer for Relation Extraction</a></h3>
+          <div class="topic">Relation extraction · PyTorch</div>
+          <p>A relation extraction implementation using Efficient GlobalPointer, with TPLinker-style decoding and configurable training and prediction.</p>
+          <a class="code" href="https://github.com/powerycy/Efficient-GlobalPointer-rel">Code &amp; documentation &rarr;</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <svg class="diagram" viewBox="0 0 154 112" role="img" aria-label="Chinese text tokens connected for joint entity and relation extraction">
+          <g fill="#e7eef6" stroke="#b5c9dc"><rect x="17" y="60" width="24" height="26" rx="3"/><rect x="49" y="60" width="24" height="26" rx="3"/><rect x="81" y="60" width="24" height="26" rx="3"/><rect x="113" y="60" width="24" height="26" rx="3"/></g>
+          <g fill="#52728e" text-anchor="middle" font-size="12"><text x="29" y="78">实</text><text x="61" y="78">体</text><text x="93" y="78">关</text><text x="125" y="78">系</text></g>
+          <path d="M29 57V43Q29 37 35 37H87Q93 37 93 43V57" fill="none" stroke="#4286b8" stroke-width="1.5"/>
+          <path d="M61 57V25Q61 19 67 19H119Q125 19 125 25V57" fill="none" stroke="#9786b7" stroke-width="1.5"/>
+          <text x="77" y="102" font-size="8" text-anchor="middle" fill="#76899c">TOKEN PAIR LINKING</text>
+        </svg>
+        <div>
+          <h3><a href="https://github.com/powerycy/TPlinker-ycy">TPLinker: Chinese Dataset Adaptation</a></h3>
+          <div class="topic">Joint entity and relation extraction · Chinese NLP</div>
+          <p>An annotated version of TPLinker adapted for Chinese datasets.</p>
+          <a class="code" href="https://github.com/powerycy/TPlinker-ycy">Code &amp; documentation &rarr;</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p><a href="mailto:chaoyiyuan3721@gmail.com">chaoyiyuan3721@gmail.com</a></p>
+      <p><a href="https://github.com/powerycy">github.com/powerycy</a></p>
+    </section>
+    <footer>Chaoyi Yuan &nbsp;&middot;&nbsp; Hosted on GitHub Pages</footer>
+  </main>
+</body>
+</html>
